@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import { Users, Maximize, Wifi, Tv, Coffee } from 'lucide-react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
-import room1Image from 'figma:asset/93e1905b8c55257915eb92d67fe9a7c7302b2093.png';
-import room2Image from 'figma:asset/b04129b425901b81d5daae441051b63c1541b715.png';
+import room1Image from 'figma:asset/room1.png';
+import room2Image from 'figma:asset/room2.png';
 
 export default function Rooms() {
   const rooms = [

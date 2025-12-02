@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import { MapPin, Bed, Wifi, Coffee, Users, Gift } from 'lucide-react';
-import heroImage from 'figma:asset/6150b8c38d00896dcb98dff3e82034d2da604f6e.png';
-import room1Image from 'figma:asset/93e1905b8c55257915eb92d67fe9a7c7302b2093.png';
-import room2Image from 'figma:asset/b04129b425901b81d5daae441051b63c1541b715.png';
+import { MapPin, Bed, Wifi, Users, Gift } from 'lucide-react';
+import heroImage from 'figma:asset/hero.png';
+import room1Image from 'figma:asset/room1.png';
+import room2Image from 'figma:asset/room2.png';
 
 export default function Home() {
   const features = [
