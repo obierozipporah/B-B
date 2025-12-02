@@ -1,0 +1,88 @@
+interface FloralDecorationProps {
+  variant?: 'horizontal' | 'vertical' | 'corner';
+  className?: string;
+  size?: number;
+}
+
+export default function FloralDecoration({ 
+  variant = 'horizontal', 
+  className = '',
+  size = 120
+}: FloralDecorationProps) {
+  if (variant === 'horizontal') {
+    return (
+      <svg
+        width={size * 2}
+        height={size / 2}
+        viewBox="0 0 240 60"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className={className}
+      >
+        {/* Left branch */}
+        <path
+          d="M20 30 Q50 28 80 30"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          fill="none"
+        />
+        {/* Left leaves */}
+        <path d="M25 30 Q23 25 25 22" stroke="currentColor" strokeWidth="1" fill="none" />
+        <path d="M35 29 Q32 24 33 21" stroke="currentColor" strokeWidth="1" fill="none" />
+        <path d="M45 29 Q43 34 45 37" stroke="currentColor" strokeWidth="1" fill="none" />
+        <path d="M55 29 Q52 24 53 21" stroke="currentColor" strokeWidth="1" fill="none" />
+        <path d="M65 30 Q63 35 65 38" stroke="currentColor" strokeWidth="1" fill="none" />
+        <path d="M75 30 Q72 25 73 22" stroke="currentColor" strokeWidth="1" fill="none" />
+
+        {/* Center element */}
+        <circle cx="120" cy="30" r="3" fill="currentColor" />
+        <path d="M115 30 Q115 25 115 23 M125 30 Q125 25 125 23" stroke="currentColor" strokeWidth="1" fill="none" />
+
+        {/* Right branch (mirrored) */}
+        <path
+          d="M160 30 Q190 28 220 30"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          fill="none"
+        />
+        {/* Right leaves */}
+        <path d="M165 30 Q162 25 163 22" stroke="currentColor" strokeWidth="1" fill="none" />
+        <path d="M175 30 Q173 35 175 38" stroke="currentColor" strokeWidth="1" fill="none" />
+        <path d="M185 29 Q182 24 183 21" stroke="currentColor" strokeWidth="1" fill="none" />
+        <path d="M195 29 Q193 34 195 37" stroke="currentColor" strokeWidth="1" fill="none" />
+        <path d="M205 29 Q202 24 203 21" stroke="currentColor" strokeWidth="1" fill="none" />
+        <path d="M215 30 Q217 25 215 22" stroke="currentColor" strokeWidth="1" fill="none" />
+      </svg>
+    );
+  }
+
+  if (variant === 'corner') {
+    return (
+      <svg
+        width={size}
+        height={size}
+        viewBox="0 0 120 120"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className={className}
+      >
+        {/* Curved branch */}
+        <path
+          d="M20 100 Q40 80 60 70 Q80 60 100 20"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          fill="none"
+        />
+        {/* Leaves along the curve */}
+        <path d="M30 90 Q25 88 22 85" stroke="currentColor" strokeWidth="1" fill="none" />
+        <path d="M45 80 Q48 78 50 75" stroke="currentColor" strokeWidth="1" fill="none" />
+        <path d="M55 72 Q52 70 50 67" stroke="currentColor" strokeWidth="1" fill="none" />
+        <path d="M70 60 Q73 58 75 55" stroke="currentColor" strokeWidth="1" fill="none" />
+        <path d="M80 45 Q77 43 75 40" stroke="currentColor" strokeWidth="1" fill="none" />
+        <path d="M90 30 Q93 28 95 25" stroke="currentColor" strokeWidth="1" fill="none" />
+      </svg>
+    );
+  }
+
+  return null;
+}
