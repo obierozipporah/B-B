@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { CreditCard, Lock, Phone, Mail } from 'lucide-react';
+import { Lock, Phone, Mail } from 'lucide-react';
 
 export default function Checkout() {
   const location = useLocation();
@@ -69,7 +69,7 @@ export default function Checkout() {
   return (
     <div>
       {/* Header */}
-      <section className="py-20 px-4 bg-gradient-to-br from-[#5a8ca0] to-[#4a7c8f] text-white text-center">
+      <section className="py-20 px-4 bg-linear-to-br from-[#5a8ca0] to-[#4a7c8f] text-white text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Complete Your Booking</h1>
           <p className="text-xl text-white/90">

@@ -5,6 +5,7 @@
 
   export default defineConfig({
     plugins: [react()],
+    logLevel: "error",
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
