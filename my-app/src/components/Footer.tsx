@@ -49,7 +49,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2 text-sm text-gray-400">
                 <Mail size={16} className="shrink-0" />
-                <span>birnelilochi25@gmail.com</span>
+                <span>birneshaven@gmail.com</span>
               </div>
             </div>
           </div>

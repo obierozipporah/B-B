@@ -64,7 +64,7 @@ export default function Location() {
   return (
     <div className="location-page">
       {/* PAGE HEADER */}
-      <section className="page-header py-20 px-4 bg-gradient-to-br from-[#5a8ca0] to-[#4a7c8f] text-white text-center">
+      <section className="page-header py-20 px-4 bg-linear-to-br from-[#5a8ca0] to-[#4a7c8f] text-white text-center">
         <div className="header-container max-w-4xl mx-auto">
           <h1 className="page-title text-5xl mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Location</h1>
           <p className="page-subtitle text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
@@ -85,7 +85,7 @@ export default function Location() {
             <div className="contact-details-list space-y-6">
               {/* Address */}
               <div className="contact-item flex items-start gap-4">
-                <div className="contact-icon w-12 h-12 bg-[#5a8ca0] rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                <div className="contact-icon w-12 h-12 bg-[#5a8ca0] rounded-lg flex items-center justify-center text-white shrink-0">
                   <MapPin size={24} />
                 </div>
                 <div className="contact-content">
@@ -99,7 +99,7 @@ export default function Location() {
 
               {/* Phone */}
               <div className="contact-item flex items-start gap-4">
-                <div className="contact-icon w-12 h-12 bg-[#5a8ca0] rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                <div className="contact-icon w-12 h-12 bg-[#5a8ca0] rounded-lg flex items-center justify-center text-white shrink-0">
                   <Phone size={24} />
                 </div>
                 <div className="contact-content">
@@ -112,20 +112,20 @@ export default function Location() {
 
               {/* Email */}
               <div className="contact-item flex items-start gap-4">
-                <div className="contact-icon w-12 h-12 bg-[#5a8ca0] rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                <div className="contact-icon w-12 h-12 bg-[#5a8ca0] rounded-lg flex items-center justify-center text-white shrink-0">
                   <Mail size={24} />
                 </div>
                 <div className="contact-content">
                   <h3 className="contact-label text-gray-900 mb-1">Email</h3>
-                  <a href="mailto:birnelilochi25@gmail.com" className="contact-link text-[#5a8ca0] hover:underline">
-                    birnelilochi25@gmail.com
+                  <a href="mailto:birneshaven@gmail.com" className="contact-link text-[#5a8ca0] hover:underline">
+                    birneshaven@gmail.com
                   </a>
                 </div>
               </div>
 
               {/* Check-in/Check-out Times */}
               <div className="contact-item flex items-start gap-4">
-                <div className="contact-icon w-12 h-12 bg-[#5a8ca0] rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                <div className="contact-icon w-12 h-12 bg-[#5a8ca0] rounded-lg flex items-center justify-center text-white shrink-0">
                   <Clock size={24} />
                 </div>
                 <div className="contact-content">
@@ -188,7 +188,7 @@ export default function Location() {
                 rel="noopener noreferrer"
                 className="transport-option-card bg-white p-6 rounded-xl shadow-md flex items-start gap-4 hover:shadow-lg transition-shadow cursor-pointer"
               >
-                <div className="transport-icon w-12 h-12 bg-[#5a8ca0] rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                <div className="transport-icon w-12 h-12 bg-[#5a8ca0] rounded-lg flex items-center justify-center text-white shrink-0">
                   {option.icon}
                 </div>
                 <div className="transport-info flex-1">

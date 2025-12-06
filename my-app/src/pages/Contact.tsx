@@ -35,8 +35,8 @@ export default function Contact() {
     {
       icon: <Mail size={28} />,
       title: 'Email',
-      info: ['birnelilochi25@gmail.com'],
-      link: 'mailto:birnelilochi25@gmail.com'
+      info: ['birneshaven@gmail.com'],
+      link: 'mailto:birneshaven@gmail.com'
     },
     {
       icon: <Clock size={28} />,
@@ -49,7 +49,7 @@ export default function Contact() {
   return (
     <div>
       {/* Header Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-[#5a8ca0] to-[#4a7c8f] text-white text-center">
+      <section className="py-20 px-4 bg-linear-to-br from-[#5a8ca0] to-[#4a7c8f] text-white text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Contact Us</h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">

@@ -284,7 +284,7 @@ export default function Checkout() {
                     +254 710 393721
                   </a>
                   <a
-                    href="mailto:birnelilochi25@gmail.com"
+                    href="mailto:birneshaven@gmail.com"
                     className="flex items-center gap-2 text-sm text-[#5a8ca0] hover:text-[#4a7c8f]"
                   >
                     <Mail size={16} />

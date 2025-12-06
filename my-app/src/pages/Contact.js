@@ -32,8 +32,8 @@ export default function Contact() {
         {
             icon: _jsx(Mail, { size: 28 }),
             title: 'Email',
-            info: ['birnelilochi25@gmail.com'],
-            link: 'mailto:birnelilochi25@gmail.com'
+            info: ['birneshaven@gmail.com'],
+            link: 'mailto:birneshaven@gmail.com'
         },
         {
             icon: _jsx(Clock, { size: 28 }),
