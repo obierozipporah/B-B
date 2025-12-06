@@ -40,15 +40,15 @@ export default function Footer() {
             <h3 className="text-white mb-4">Contact</h3>
             <div className="space-y-3">
               <div className="flex items-start gap-2 text-sm text-gray-400">
-                <MapPin size={16} className="mt-1 flex-shrink-0" />
+                <MapPin size={16} className="mt-1 shrink-0" />
                 <span>JP6P+6VP, Laiser Hill Rd, Ongata Rongai</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-gray-400">
-                <Phone size={16} className="flex-shrink-0" />
+                <Phone size={16} className="shrink-0" />
                 <span>+254 710 393721</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-gray-400">
-                <Mail size={16} className="flex-shrink-0" />
+                <Mail size={16} className="shrink-0" />
                 <span>birnelilochi25@gmail.com</span>
               </div>
             </div>

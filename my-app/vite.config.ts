@@ -1,10 +1,14 @@
 
   import { defineConfig } from 'vite';
   import react from '@vitejs/plugin-react-swc';
+  import Checker from "vite-plugin-checker";
   import path from 'path';
 
   export default defineConfig({
-    plugins: [react()],
+    plugins: [
+      react(),
+      Checker({ typescript: false }) 
+    ],
     logLevel: "error",
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],

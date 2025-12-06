@@ -5,8 +5,19 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
-    "strict": false,
-    "noEmitOnError": false
-  }
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    "jsx": "react-jsx",
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmitOnError": false,
+    "composite": true
+
+  },
+  "include": ["src"]
 }
 
