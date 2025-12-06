@@ -24,7 +24,7 @@
         'input-otp': 'input-otp',
         'figma:asset/room2.png': path.resolve(__dirname, './src/assets/room2.png'),
         'figma:asset/room1.png': path.resolve(__dirname, './src/assets/room1.png'),
-        'figma:asset/hero.png': path.resolve(__dirname, './src/assets/hero.png'),
+        'figma:asset/hero1.png': path.resolve(__dirname, './src/assets/hero1.png'),
         'embla-carousel-react': 'embla-carousel-react',
         'cmdk': 'cmdk',
         'class-variance-authority': 'class-variance-authority',

@@ -1,5 +1,6 @@
 import * as React from "react";
 import * as RechartsPrimitive from "recharts";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 declare const THEMES: {
     readonly light: "";
     readonly dark: ".dark";

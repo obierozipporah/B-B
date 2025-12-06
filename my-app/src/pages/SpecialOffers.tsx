@@ -62,7 +62,7 @@ export default function SpecialOffers() {
   return (
     <div>
       {/* Header Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-[#5a8ca0] to-[#4a7c8f] text-white text-center">
+      <section className="py-20 px-4 bg-linear-to-br from-[#5a8ca0] to-[#4a7c8f] text-white text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Special Offers</h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
@@ -80,7 +80,7 @@ export default function SpecialOffers() {
               className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover:-translate-y-1"
             >
               {/* Gradient Header */}
-              <div className={`bg-gradient-to-br ${offer.color} p-8 text-white text-center`}>
+              <div className={`bg-linear-to-br ${offer.color} p-8 text-white text-center`}>
                 <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
                   {offer.icon}
                 </div>

@@ -75,7 +75,7 @@ export default function Amenities() {
   return (
     <div>
       {/* Header Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-[#5a8ca0] to-[#4a7c8f] text-white text-center">
+      <section className="py-20 px-4 bg-linear-to-br from-[#5a8ca0] to-[#4a7c8f] text-white text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Amenities</h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
@@ -101,7 +101,7 @@ export default function Amenities() {
               key={index}
               className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
             >
-              <div className="w-20 h-20 bg-gradient-to-br from-[#5a8ca0] to-[#4a7c8f] rounded-2xl flex items-center justify-center text-white mb-6 mx-auto">
+              <div className="w-20 h-20 bg-linear-to-br from-[#5a8ca0] to-[#4a7c8f] rounded-2xl flex items-center justify-center text-white mb-6 mx-auto">
                 {amenity.icon}
               </div>
               <h3 className="text-xl text-gray-900 mb-3 text-center" style={{ fontFamily: 'Playfair Display, serif' }}>

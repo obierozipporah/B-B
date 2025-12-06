@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Bed, Wifi, Users, Gift } from 'lucide-react';
-import heroImage from 'figma:asset/hero.png';
+import { ImageWithFallback } from '../components/figma/ImageWithFallback';
+import heroImage from 'figma:asset/hero1.png';
 import room1Image from 'figma:asset/room1.png';
 import room2Image from 'figma:asset/room2.png';
 
@@ -31,34 +32,35 @@ export default function Home() {
   return (
     <div className="home-page">
       {/* HERO SECTION */}
-      <section className="hero-section relative h-screen overflow-hidden">
-        {/* Hero Background Image Container */}
-        <div 
-          className="hero-background absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url(${heroImage})`
-          }}
-        />
+      <section className="hero-section relative h-screen overflow-hidden bg-gray-900">
+        {/* Hero Background Image */}
+        <div className="hero-background-image absolute inset-0">
+          <img
+            src={heroImage}
+            alt="Modern living room at Birnes Haven"
+            className="w-full h-full object-cover"
+          />
+          {/* Dark overlay for better text contrast */}
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
         
         {/* Hero Diagonal Overlay */}
         <div 
-          className="hero-overlay absolute inset-0 bg-gradient-to-br from-[#4a7c8f] via-[#5a8ca0] to-[#4a7c8f]"
+          className="hero-overlay absolute inset-0 bg-linear-to-br from-[#4a7c8f]/95 via-[#5a8ca0]/90 to-[#4a7c8f]/95"
           style={{
-            clipPath: 'polygon(0 0, 55% 0, 45% 100%, 0 100%)'
+            clipPath: 'polygon(0 0, 60% 0, 40% 100%, 0 100%)'
           }}
         />
-
-        {/* Hero Close Button */}
-        <button className="hero-close-button absolute top-6 right-6 w-14 h-14 bg-black/60 rounded-full flex items-center justify-center text-white hover:bg-black/80 transition-colors z-20">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M18 6L6 18M6 6l12 12" />
-          </svg>
-        </button>
 
         {/* Hero Content Container */}
         <div className="hero-content relative z-10 h-full flex items-center">
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
             <div className="max-w-xl">
+              {/* Brand Badge */}
+              <div className="brand-badge inline-block bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-2 mb-6">
+                <p className="text-white text-sm tracking-wider">BIRNES HAVEN</p>
+              </div>
+
               {/* Hero Heading */}
               <h1 
                 className="hero-heading text-white text-5xl sm:text-6xl lg:text-7xl mb-8 leading-tight"
@@ -71,7 +73,7 @@ export default function Home() {
               </h1>
               
               {/* Hero Speech Bubble */}
-              <div className="hero-speech-bubble bg-white rounded-3xl px-8 py-6 inline-block shadow-lg mb-8 relative">
+              <div className="hero-speech-bubble bg-white rounded-3xl px-8 py-6 inline-block shadow-2xl mb-8 relative">
                 <div 
                   className="speech-bubble-tail absolute left-8 top-0 w-8 h-8 bg-white"
                   style={{
@@ -80,10 +82,35 @@ export default function Home() {
                   }}
                 />
                 <p className="text-xl text-gray-800 leading-relaxed">
-                  Looking for a <span className="font-medium">peaceful, clean,<br />and cozy</span> place to stay?
+                  Looking for a <span className="font-medium text-[#4a7c8f]">peaceful, clean,<br />and cozy</span> place to stay?
                 </p>
               </div>
+
+              {/* Hero CTA Buttons */}
+              <div className="hero-cta-buttons flex flex-col sm:flex-row gap-4">
+                <Link
+                  to="/availability"
+                  className="cta-primary bg-white text-[#4a7c8f] px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors shadow-lg text-center"
+                >
+                  Book Your Stay
+                </Link>
+                <Link
+                  to="/rooms"
+                  className="cta-secondary bg-white/10 backdrop-blur-sm border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white/20 transition-colors text-center"
+                >
+                  Explore Rooms
+                </Link>
+              </div>
             </div>
+          </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="scroll-indicator absolute bottom-8 left-1/2 -translate-x-1/2 z-20">
+          <div className="animate-bounce">
+            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
           </div>
         </div>
       </section>
@@ -131,7 +158,7 @@ export default function Home() {
             <div className="features-list space-y-6">
               {features.map((feature, index) => (
                 <div key={index} className="feature-item flex items-start gap-4">
-                  <div className="feature-icon flex-shrink-0 text-[#5a8ca0]">
+                  <div className="feature-icon shrink-0 text-[#5a8ca0]">
                     {feature.icon}
                   </div>
                   <div className="feature-text">
@@ -164,12 +191,12 @@ export default function Home() {
             ].map((room, index) => (
               <div key={index} className="room-card group cursor-pointer">
                 <div className="room-image-container relative h-64 rounded-2xl overflow-hidden mb-4">
-                  <img 
+                  <ImageWithFallback 
                     src={room.image} 
                     alt={room.name}
                     className="room-image w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="room-overlay absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <div className="room-overlay absolute inset-0 bg-linear-to-t from-black/60 to-transparent" />
                   <div className="room-info absolute bottom-4 left-4 right-4">
                     <h3 className="room-name text-white text-xl mb-1">{room.name}</h3>
                     <p className="room-price text-white/90">{room.price}/night</p>
@@ -191,7 +218,7 @@ export default function Home() {
       </section>
 
       {/* SPECIAL OFFER BANNER */}
-      <section className="offer-banner-section bg-gradient-to-r from-[#4a7c8f] to-[#5a8ca0] py-16 px-6 text-white">
+      <section className="offer-banner-section bg-linear-to-r from-[#4a7c8f] to-[#5a8ca0] py-16 px-6 text-white">
         <div className="offer-banner-container max-w-4xl mx-auto text-center">
           <div className="offer-header flex items-center justify-center gap-3 mb-4">
             <Gift size={40} className="offer-icon" />

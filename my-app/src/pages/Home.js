@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { Link } from 'react-router-dom';
 import { MapPin, Bed, Wifi, Users, Gift } from 'lucide-react';
-import heroImage from 'figma:asset/hero.png';
+import heroImage from 'figma:asset/hero1.png';
 import room1Image from 'figma:asset/room1.png';
 import room2Image from 'figma:asset/room2.png';
 export default function Home() {

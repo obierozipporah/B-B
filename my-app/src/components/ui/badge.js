@@ -20,5 +20,5 @@ function Badge({ className, variant, asChild = false, ...props }) {
     const Comp = asChild ? Slot : "span";
     return (_jsx(Comp, { "data-slot": "badge", className: cn(badgeVariants({ variant }), className), ...props }));
 }
-// eslint-disable-next-line react-refresh/only-export-components
+
 export { Badge, badgeVariants };

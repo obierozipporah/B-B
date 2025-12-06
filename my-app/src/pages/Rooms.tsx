@@ -33,7 +33,7 @@ export default function Rooms() {
   return (
     <div>
       {/* Header Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-[#5a8ca0] to-[#4a7c8f] text-white text-center">
+      <section className="py-20 px-4 bg-linear-to-br from-[#5a8ca0] to-[#4a7c8f] text-white text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Our Rooms</h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">

@@ -24,5 +24,5 @@ const toggleVariants = cva("inline-flex items-center justify-center gap-2 rounde
 function Toggle({ className, variant, size, ...props }) {
     return (_jsx(TogglePrimitive.Root, { "data-slot": "toggle", className: cn(toggleVariants({ variant, size, className })), ...props }));
 }
-// eslint-disable-next-line react-refresh/only-export-components
+
 export { Toggle, toggleVariants };
