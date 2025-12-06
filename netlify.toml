@@ -1,4 +1,19 @@
+
 [build]
+  # Base directory where your package.json and source code live
   base = "my-app"
-  publish = "dist"        # just "dist", NOT "my-app/dist"
+  # Command to build your project
   command = "npm run build"
+  # Directory to publish (relative to base)
+  publish = "dist"
+  # Directory for serverless functions, if any (optional)
+  # functions = "functions"
+
+[build.environment]
+  NODE_VERSION = "20" # Or the version you're using locally
+
+# Optional: Redirects, SPA fallback, etc.
+# [[redirects]]
+#   from = "/*"
+#   to = "/index.html"
+#   status = 200
