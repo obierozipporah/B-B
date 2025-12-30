@@ -24,7 +24,7 @@ export default defineConfig({
             'figma:asset/room1.png': path.resolve(__dirname, './src/assets/room1.png'),
             'figma:asset/hero1.png': path.resolve(__dirname, './src/assets/hero1.png'),
             'embla-carousel-react': 'embla-carousel-react',
-            'cmdk@1.1.1': 'cmdk',
+            'cmdk': 'cmdk',
             'class-variance-authority': 'class-variance-authority',
             '@radix-ui/react-tooltip': '@radix-ui/react-tooltip',
             '@radix-ui/react-toggle': '@radix-ui/react-toggle',
