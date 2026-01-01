@@ -7,8 +7,8 @@ export default function Testimonials() {
       location: 'Nairobi, Kenya',
       rating: 5,
       date: 'November 2024',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400',
-      text: 'Absolutely wonderful experience! The room was spotlessly clean, and the swimming pool view from A402 was breathtaking. The gazebo area was perfect for evening relaxation. Highly recommend!',
+      image: 'https://unsplash.com/photos/CCY5Imr-RiU?utm_source=chatgpt.com',
+      text: 'Nice stay overall. The room was clean, and the swimming pool view from room A402 was pleasant. The gazebo area was a good spot to relax in the evening. Would recommend.',
       room: 'A402, Tsavo Laiser Place'
     },
     {
